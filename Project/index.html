@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            background-color: rgb(5 34 49);
+            color: white
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(21 61 86);
+        }
+
+
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(150, 150, 232);
+            font-size: 1.04rem;
+        }
+
+        nav ul .bt {
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 48px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            margin: 70px 0;
+
+        }
+
+        .leftSection .btn {
+            margin: 2px;
+            padding: 7px;
+            background: #1e2167;
+            color: white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightSection img {
+            width: 100%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .leftSection div {
+            margin: 5px 0;
+        }
+
+
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 74vw;
+            margin: auto;
+            height: 75vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+            margin: 15px 0;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 83vw;
+            height: 2px;
+            margin: 46px 0;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 90px;
+        }
+
+        .image-c {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+
+        .vertical-title {
+            position: relative;
+            top: 102px;
+            right: 95px;
+            width: 110px;
+        }
+
+        footer {
+            background-color: #03020266;
+            height: 150px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 12px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+            justify-content: space-evenly;
+
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: grey;
+            padding: 1px 0;
+        }
+
+        footer .footer-second {
+            position: relative;
+            top: 5px;
+        }
+
+
+
+        .social-i {
+            width: 15px;
+            position: relative;
+            top: 20px;
+            left: -9px;
+        }
+
+        /* Style all font awesome icons */
+        .fa {
+            padding: 10px;
+            margin: 13px 5px;
+            font-size: 13px;
+            width: 13px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+
+        /* Add a hover effect if you want */
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        /* Set a specific color for each brand */
+
+
+        /* Twitter */
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-instagram{
+            background: #e7055f;
+            color: white;
+        }
+
+        .fa-linkedin{
+            background:  #003c78;
+            color: white;
+        }
+
+
+
+/* Responsive with media command*/
+        @media screen and (max-width: 1200px) {
+
+
+            .box {
+                flex-direction: column;
+            }
+
+
+
+            .secondSection .vertical {
+                height: unset;
+            }
+
+            .secondSection .image-c {
+                width: 13px;
+                top: 21px;
+                left: -6px;
+            }
+
+            .secondSection .vertical-title {
+
+                top: 0px;
+                left: 131px;
+                width: 110px;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 45px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            .secondSection {
+                height: 60vh;
+            }
+
+            .secondSection .box {
+                width: 75vw;
+            }
+
+            .firstSection {
+                flex-direction: column-reverse;
+            }
+
+            .leftSection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+            }
+
+            .leftSection div {
+                margin: 15px 16px;
+            }
+
+
+            .rightSection {
+                width: 75% !important;
+            }
+
+            @media screen and (max-width: 380px) {
+                nav ul {
+                    display: flex;
+                    justify-content: center;
+                    margin: -2px;
+                }
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Aman's Portfolio</div>
+
+            </div class="right">
+            <ul>
+                <!--lists with hyperlink-->
+                <button class="bt"> HOME </button>
+                <form action="https://www.linkedin.com/in/aman-chandravanshi-sstc/">
+                    <button class="bt">About </button>
+                </form>
+
+                <form action="https://github.com/deadlyaman0000/MyCode">
+
+                    <button class="bt">MyCode</button>
+                </form>
+
+
+                <form action="https://github.com/deadlyaman0000/MyCode">
+                    <button class="bt">Projects</button>
+                </form>
+
+                <form action="https://twitter.com/AmanCha92718747">
+                    <button class="bt">Contact ME</button>
+                </form>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is </div>
+                <span class="purple"> Aman</span>
+                <div>and I am a passonate </div>
+
+                <span id="element"></span>
+                <!-- script for text animation-->
+
+                
+                    <div class="buttons">
+                        <form action="https://drive.google.com/file/d/1xSec3l3xYSsU0hUxSRHdJYxn09x4qhVi/view?usp=sharing"> <button class="btn">Download Reume</button></form>
+                       
+                        <form action="https://github.com/deadlyaman0000">
+                        <button class="btn">Visit Github</button>
+                    </form>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="rightSection">
+                <img src="sde.png" alt=""> <!--image-->
+            </div>
+
+        </section>
+        <hr> <!--adds new line-->
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Skills</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-c" src="c.png" alt="">
+                </div>
+                <div class="vertical-title">
+                    C
+                </div>
+
+                <div class="vertical">
+                    <img class="image-c" src="cpp.png" alt="">
+                </div>
+                <div class="vertical-title">
+                    C++
+                </div>
+
+                <div class="vertical">
+                    <img class="image-c" src="datastructure.png" alt="">
+                </div>
+                <div class="vertical-title">
+                    Data Structures
+                </div>
+
+                <div class="vertical">
+                    <img class="image-c" src="problem.png.png" alt="">
+                </div>
+                <div class="vertical-title">
+                    Problem Solving
+                </div>
+
+
+                <div class="vertical">
+                    <img class="image-c" src="html.png" alt="">
+                </div>
+                <div class="vertical-title">
+                    HTML
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+        </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+
+            <div class="footer-first">
+
+                <h4>
+                    <div class="divf">Aman's Portfolio </div>
+                    </h>
+                    <div class="footer-second">
+                        <ul>
+
+                            <li></li><a href="">Home</a> </li>
+                            <li><a href="https://twitter.com/AmanCha92718747">Contact</a></li>
+                            <li></li> <a href="https://github.com/deadlyaman0000/MyCode">MyCode</a>
+                            </li>
+
+                        </ul>
+                        <div>
+
+                        </div>
+                    </div>
+
+            </div>
+            <div class="footer-rights">
+                <div> Copyright &#169: amansportfolio.com | All rights reserved</div>
+             
+                <a href="https://twitter.com/AmanCha92718747" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/aman-chandravanshi-sstc/" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/darkneth_/" class="fa fa-instagram"></a>
+             
+    </footer>
+
+    <!--text animation typed js-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer', 'Coder'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
